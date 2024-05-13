@@ -1,0 +1,57 @@
+/* Este archivo busca poder tener variables y clases que las paginas de mi sistema requeriran tener en comun */
+
+
+/* Variables css */
+:root {
+    --primary-color: #3518b3;
+    --secondary-color: #ffffff;
+  
+    --small-screen: 736px;
+    --ancho-maximo: 800px;
+  }
+  
+  /* Configuracion para todos los elementos del sistema */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Defino ancho y largo del elemento body */
+  /* Tambien defino el color de fondo */
+  body{
+    width: 100%;
+    height: 100vh;
+    background: var(--secondary-color);
+  }
+  
+  /* Eliminar decoración de listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Eliminar decoración de enlaces */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Button */
+  .btn {
+    width: 100%;
+    cursor: pointer;
+    gap: 0.5rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .full-center
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
