@@ -1,3 +1,17 @@
+header {
+    padding: 20px 20px; /*Espacio adentro de elemento*/
+    background-color: grey;
+    background-image: url(../assets/images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    display: flex;
+}
+
 form{
     gap: 1rem; 
     display: flex; 
@@ -11,7 +25,113 @@ form{
 
 .form-group{ 
     gap: 1rem;
+    flex-direction: row;
     display: flex; 
     flex-wrap: wrap; 
     align-items: center;
+}
+
+.form-group input{
+    flex: 100%;
+}
+
+.container-sections
+{
+    width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.container-table {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.container-table table {
+    width: 75%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-table table thead {
+    width: 100%;
+}
+
+.container-table table thead tr th{
+    width: 12.5%;
+}
+
+.container-table table tbody tr td{
+    width: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-table table tr {
+    justify-content: space-between;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.table-stripped thead tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-stripped tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#spinner-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.delete-all{
+    background: goldenrod;
+    color: black;
+    padding: 0.5rem;
+}
+
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Centra los botones dentro del btn-group */
+    width: 100%;
+}
+
+.green{
+    background: green;
+    color: white;
+    padding: 0.5rem;
+}
+
+.yellow{
+    background: gold;
+    color: black;
+    padding: 0.5rem;
+}
+
+.red{
+    background: red;
+    color: white;
+    padding: 0.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.special label {
+    flex: 0 0 30%; /* ajusta el ancho del label según tus necesidades */
+    margin-right: 10px; /* ajusta el margen entre el label y el input */
+}
+
+.special input {
+    flex: 0 0 60%; /* ajusta el ancho del input según tus necesidades */
 }

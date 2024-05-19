@@ -9,6 +9,139 @@
     <script src="./Js/index.js" type="module"></script>
 </head>
 <body>
+    <header>
+        <div class="barra">
+            <img src="./assets/images/logo.svg" alt="Logo principal"> 
+        </div>
+        <h1>Almacenamiento local y formularios (Práctica)</h1>
+    </header>
+    <div class="container-sections full-center">
+        <fieldset>
+            <legend>Información del Anuncio</legend>
+            <form action="" method="post" id="form-anuncio">
+                <div class="form-group">
+                    <input 
+                        type="hidden" 
+                        name="idAnuncio"
+                        id = "idAnuncio"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="titulo:">Titulo:</label>
+                    <input 
+                        type="text" 
+                        name="titulo" 
+                        id = "titulo" 
+                        autocomplete="on" 
+                        placeholder="Titulo.."
+                    >
+                </div>   
+                    
+                <fieldset>
+                    <legend>Transaccion:</legend>
+                    <label for="rVenta">Venta</label>
+                    <input type="radio" name = "transaccion" id = "rVenta" checked>
+                    <label for="rAlquiler">Alquiler</label>
+                    <input type="radio" name = "transaccion" id = "rAlquiler">
+                </fieldset>
+            
+                <div class="form-group">
+                    <label for="descripcion">Descripcion:</label>
+                    <input 
+                        type="text" 
+                        name="descripcion" 
+                        id = "descripcion" 
+                        autocomplete="on" 
+                        placeholder="Descripcion.."
+                    >
+                </div>  
     
+                <div class="form-group"> 
+                    <label for="precio">Precio:</label>
+                        <input
+                            type="number" 
+                            required
+                            name="precio"
+                            id="precio"
+                            min="0"
+                            placeholder="Precio.."
+                        >
+                </div>
+
+                <div class="form-group special">
+                    <label for="puertas">Puertas:</label>
+                        <input
+                            type="number" 
+                            required
+                            name="puertas"
+                            id="puertas"
+                            min="0"
+                            placeholder="Puertas.."
+                        >
+
+                        <label for="kms">Kms:</label>
+                        <input
+                            type="number" 
+                            required
+                            name="kms"
+                            id="kms"
+                            min="0"
+                            placeholder="Kms.."
+                        >
+
+                        <label for="potencia">Potencia:</label>
+                        <input
+                            type="number" 
+                            required
+                            name="potencia"
+                            id="potencia"
+                            min="0"
+                            placeholder="Potencia.."
+                        >
+                </div>
+
+                <div class="form-group">
+                    <div id = "btn-group" class = "btn-group">
+                        <button id = "save-data" class= "btn green" type="submit">Cargar Anuncio</button>
+                        <button id = "modify-cell" class= "btn hidden green" type="button">Guardar </button>
+                        <button id = "cancel-cell" class= "btn hidden yellow" type="button">Cancelar</button>
+                        <button id = "delete-cell" class= "btn hidden red" type="button">Eliminar</button>
+                    </div>            
+                </div>
+            </form>
+        </fieldset>
+
+        <div id="spinner-container"></div>
+    
+        <div class="container-table">
+            <table id="table-items" class="table-items table-stripped">
+              <thead>
+                <tr>
+                  <th hidden>ID</th>
+                  <th>Titulo</th>
+                  <th>Transaccion</th>
+                  <th>Descripcion</th>
+                  <th>Precio</th>
+                  <th>Nro. Puertas</th>
+                  <th>Nro. KMs</th>
+                  <th>Nro. Potencia</th>
+                </tr>
+              </thead>
+    
+              <tbody>
+    
+              </tbody>
+              
+            </table>
+        </div>
+    
+        <div class = full-center>
+          <button id="btn-delete-all" class="btn delete-all">Borrar Datos</button>
+        </div>
+    </div>
+    
+        
+        
 </body>
 </html>
